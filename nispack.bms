@@ -1,53 +1,56 @@
-# Repack de DAT NIS para PSP La Pucelle: Ragnarok
-# Script conceptual para QuickBMS
+# PSP La Pucelle: Ragnaraok (DAT) (script 0.1.2)
+# script for QuickBMS http://quickbms.aluigi.org
 
 comtype nislzs
 
-# Carpeta donde están los archivos extraídos
-getdstring FOLDER 256
+get EXT extension
+if EXT == "lzs"
+    get NAME basename
+    callfunction GET_LZS_INFO 1
+    clog NAME OFFSET ZSIZE SIZE
+    cleanexit
+endif
 
-# Crea nuevo DAT
-getdstring OUTPUT 256
-createfile OUTPUT
+getdstring CHECK 8
+goto 0
+if CHECK != "NISPACK"
+    filexor 0xf0
+    encryption rotate 4 8
+    filecrypt 1
+endif
 
-# Escribe cabecera
-put "NISPACK\0"  # idstring
-putl 0           # dummy
-# Calcula número de archivos
-math FILES = 0
-fdirlist FOLDER "*.*" FILES
-putl FILES
-
-# Empieza tabla de archivos
+idstring "NISPACK\0"
+get DUMMY long  # 0
+get FILES long
 for i = 0 < FILES
-    fdir FOLDER i FILE
-    getdstring NAME 0x20 FILE
-    # Prepara offset temporal, lo ajustaremos luego
-    putl 0   # OFFSET placeholder
-    # Obtén tamaño del archivo
-    filesize FILE SIZE
-    putl SIZE
-    putl 0   # CRC placeholder
-next i
+    getdstring NAME 0x20
+    get OFFSET long
+    get SIZE long
+    get CRC long
 
-# Ahora escribe los datos de cada archivo
-math OFFSET = ftell
-for i = 0 < FILES
-    fdir FOLDER i FILE
-    savepos TMP
-    goto OFFSET
-    # Escribir archivo (comprime si es lzs)
-    set EXT extension FILE
+    math ZSIZE = 0
+    set EXT extension NAME
     if EXT == "lzs"
-        comtype nislzs
-        # opcional: aplicar compresión lzs
+        savepos TMP
+        goto OFFSET
+        callfunction GET_LZS_INFO 1
+        goto TMP
     endif
-    log FILE OFFSET SIZE
-    filesize FILE SIZE
-    math OFFSET = OFFSET + SIZE
-    goto TMP
+
+    filecrypt ""    # quickbms feature or bug?
+    if ZSIZE == 0
+        log NAME OFFSET SIZE
+    else
+        clog NAME OFFSET ZSIZE SIZE
+    endif
+    filecrypt 1
 next i
 
-# Ajustar offsets en tabla de archivos
-# Este paso es complejo: hay que volver al inicio y escribir OFFSET correctos
-# QuickBMS puede usar filepatch o similar
+startfunction GET_LZS_INFO
+    getdstring TYPE 4   # "dat\0"
+    get SIZE long
+    get ZSIZE long
+    math ZSIZE - 8
+    savepos OFFSET
+    set NAME fullbasename NAME
+endfunction
