@@ -51,7 +51,7 @@ Originalmente lanzado únicamente en japonés, este proyecto permite disfrutar l
 |-------|---------|
 | ✅ Extracción de archivos | ██████████ 100% |
 | ✅ Modificación de archivos | ██████████ 100% |
-| 📝 Soporte de caracteres españoles | ████░░░░░ 40% |
+| 📝 Soporte de caracteres españoles | ████░░░░░░ 40% |
 | ⚠️ Traducción de diálogos | ░░░░░░░░░░ 0% |
 | ⚠️ Pruebas y correcciones | ░░░░░░░░░░ 0% |
 
