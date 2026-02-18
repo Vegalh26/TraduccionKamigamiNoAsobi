@@ -43,7 +43,7 @@ Originalmente lanzado únicamente en japonés, este proyecto permite disfrutar l
 - ✅ Archivos de diálogo extraídos (`DATA01.dat` y otros)  
 - ✅ Modificación de los archivos posible  
 - ✅ El juego acepta y corre los archivos editados  
-- ⚠️ Limitación: Actualmente **no soporta caracteres españoles (solo ASCII)**  
+- ⚠️ Limitación: Actualmente **no soporta caracteres españoles (solo Shift-JIS)**  
 
 ### Barra de progreso aproximada de la traducción
 
