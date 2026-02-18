@@ -1,48 +1,48 @@
-Offset 0x304: 初春。
-Offset 0x33c: 部屋のカーテンの隙間から桜の花が見えた。
-Offset 0x370: まだ咲き切っていない未熟な花。
-Offset 0x3c0: それでも淡い紅色は美しく、
-Offset 0x3e8: 私は思わず見惚れてしまう。
-Offset 0x450: 「ご飯出来たわよー！」
-Offset 0x4bc: 「Ya voy!」
-Offset 0x514: 居間から母の声が聞こえ、
-Offset 0x538: y baje' al primer piso。
-Offset 0x694: 居間は優しい香りで満たされていた。
-Offset 0x6e8: 「母さん、おはよう。
-Offset 0x768: 机の上に白米、味噌汁、焼き魚……と、
-Offset 0x798: 今朝の献立が置かれていく。
-Offset 0x7e4: 台所から料理を運ぶ母を手伝い、
-Offset 0x810: y me sente' en mi coji'n。
-Offset 0x8dc: そのとき玄関の戸が開く音がして、
-Offset 0x908: まもなく父が居間に現れる。
-Offset 0x954: 「Ah！
-Offset 0x9e0: 「おはよう、
-Offset 0xaac: そう言うと、大きく肩を回した。
-Offset 0xafc: 神主である父は神社の参道を掃除するのが
-Offset 0xb30: todas las ma?anas。
-Offset 0xb90: 「お、今朝も旨そうだな」
-Offset 0xc08: 父は弾んだ声で言いながら自分の席に座り、
-Offset 0xc3c: それからテレビをつける。
-Offset 0xce0: 液晶画面に映し出されたニュース番組は、
-Offset 0xd14: 都会で起きた事件を報道している。
-Offset 0xd80: 「相変わらず、物騒だな」
-Offset 0xdec: 父は悪い事件に顔をしかめながら、
-Offset 0xe18: 箸を手に取り。
-Offset 0xe74: 「いただきます」
-Offset 0xee4: Empez? a desayunar。
-Offset 0xf28: 「Buen provecho！」
-Offset 0xf84: 父の挨拶に習って私もご飯を食べ始める。
-Offset 0x1054: 「……おはよう」
-Offset 0x10b8: 出掛ける支度を終えた大学３年の兄である
-Offset 0x10ec: 学もやって来て、ご飯に箸をつける。
-Offset 0x1140: それから母がエプロンを解きつつ。
-Offset 0x11ac: 「Jun! Vas a llegar tarde!」
-Offset 0x1228: grito' desde el segundo piso。
-Offset 0x12b8: 途端、ドタドタと慌ただしい足音が聞こえ、
-Offset 0x12ec: 大学１年生の兄・純は階段から転げ落ちるように
-Offset 0x1324: y entr? en la sala。
-Offset 0x1384: 「Uy！
-Offset 0x1598: 一瞬にして茶碗の白米をたいらげると
+Offset 0x304: Ｐｒｉｎ
+Offset 0x33c: Ｄｅｓｄｅ　ｌａ　ｒｅｎｄｉｊａ　ｄｅ
+Offset 0x370: Ｆｌｏｒｅｓ　ａｕ?ｎ　ｉｎｍａ
+Offset 0x3c0: Ａｕｎ　ａｓｉ?，　ｓｕ　ｓ
+Offset 0x3e8: ｙ　ｎｏ　ｐｕｄｅ　ｅｖｉｔ
+Offset 0x450: 「Ｌａ　ｃｏｍｉｄａ　ｅ
+Offset 0x4bc: 「Ｙａ　ｖｏｙ！
+Offset 0x514: Ｄｅｓｄｅ　ｌａ　ｓａｌ
+Offset 0x538: ｙ　ｂａｊｅ?　ａｌ　ｐ
+Offset 0x694: Ｌａ　ｓａｌａ　ｅｓｔａｂａ　ｌｌｅ
+Offset 0x6e8: 「Ｂｕｅｎｏｓ　ｄｉ
+Offset 0x768: Ｅｎ　ｌａ　ｍｅｓａ　ｈａｂｉ?ａ
+Offset 0x798: ｓｅ　ｖａｎ　ｃｏｌｏｃａｎ
+Offset 0x7e4: Ａｙｕｄｅ　ａ　ｍｉ　ｍａｄｒｅ
+Offset 0x810: ｙ　ｍｅ　ｓｅｎｔｅ?　ｅｎ
+Offset 0x8dc: Ｅｎ　ｅｓｅ　ｍｏｍｅｎｔｏ　ｓ
+Offset 0x908: ｙ　ｐｏｃｏ　ｄｅｓｐｕｅｓ
+Offset 0x954: 「Ａｈ！
+Offset 0x9e0: 「Ｂｕｅｎｏ
+Offset 0xaac: ｄｉｊｏ　ｍｉｅｎｔｒａｓ　ｇｉ
+Offset 0xafc: Ｍｉ　ｐａｄｒｅ　ｓａｃｅｒｄｏｔｅ　ｔ
+Offset 0xb30: ｔｏｄａｓ　ｌａｓ
+Offset 0xb90: 「Ｏｈ、ｅｓｔａ　ｍａｎ
+Offset 0xc08: ｄｉｊｏ　ｃｏｎ　ｖｏｚ　ａｎｉｍａｄａ
+Offset 0xc3c: ｙ　ｌｕｅｇｏ　ｅｎｃｅ
+Offset 0xce0: Ｅｎ　ｌａ　ｐａｎｔａｌｌａ　ＬＣＤ　ｓ
+Offset 0xd14: ｉｎｆｏｒｍａｎｄｏ　ｓｏｂｒｅ
+Offset 0xd80: 「Ｓｉｇｕｅ　ｓｉｅｎｄ
+Offset 0xdec: ｍｉ　ｐａｄｒｅ　ｆｒｕｎｃｉｏ
+Offset 0xe18: ｙ　ｔｏｍｏ　ｌ
+Offset 0xe74: 「Ｂｕｅｎ　ｐｒ
+Offset 0xee4: Ｅｍｐｅｚｏ　ａ　ｄ
+Offset 0xf28: 「Ｂｕｅｎ　ｐｒｏｖ
+Offset 0xf84: Ｓｉｇｕｉｅｎｄｏ　ｅｌ　ｓａｌｕｄｏ
+Offset 0x1054: 「……Ｂｕｅｎｏ
+Offset 0x10b8: Ｍｉ　ｈｅｒｍａｎｏ　ｍａｙｏｒ　Ｇａｋ
+Offset 0x10ec: ｌｌｅｇｏ?　ｙ　ｐｕｓｏ　ｌｏｓ
+Offset 0x1140: Ｌｕｅｇｏ，　ｍｉ　ｍａｄｒｅ，
+Offset 0x11ac: 「Ｊｕｎ！　Ｖａｓ　ａ　ｌｌ
+Offset 0x1228: ｇｒｉｔｏ?　ｄｅｓｄｅ　ｅｌ
+Offset 0x12b8: Ｄｅ　ｒｅｐｅｎｔｅ，　ｓｅ　ｅｓｃｕｃ
+Offset 0x12ec: ｙ　ｍｉ　ｈｅｒｍａｎｏ　ｍｅｎｏｒ　Ｊｕｎ
+Offset 0x1324: ｙ　ｅｎｔｒｏ　ｅｎ
+Offset 0x1384: 「Ｕｙ！
+Offset 0x1598: 一Ｅｎ　ｕｎ　ｉｎｓｔａｎｔｅ　ｓｅ
 Offset 0x15c8: 疾風のごとく居間を通過して
 Offset 0x15f0: 玄関から飛び出して行った。
 Offset 0x1658: 「まったく、相変わらず忙しない子ね」
