@@ -1,0 +1,53 @@
+# Repack de DAT NIS para PSP La Pucelle: Ragnarok
+# Script conceptual para QuickBMS
+
+comtype nislzs
+
+# Carpeta donde están los archivos extraídos
+getdstring FOLDER 256
+
+# Crea nuevo DAT
+getdstring OUTPUT 256
+createfile OUTPUT
+
+# Escribe cabecera
+put "NISPACK\0"  # idstring
+putl 0           # dummy
+# Calcula número de archivos
+math FILES = 0
+fdirlist FOLDER "*.*" FILES
+putl FILES
+
+# Empieza tabla de archivos
+for i = 0 < FILES
+    fdir FOLDER i FILE
+    getdstring NAME 0x20 FILE
+    # Prepara offset temporal, lo ajustaremos luego
+    putl 0   # OFFSET placeholder
+    # Obtén tamaño del archivo
+    filesize FILE SIZE
+    putl SIZE
+    putl 0   # CRC placeholder
+next i
+
+# Ahora escribe los datos de cada archivo
+math OFFSET = ftell
+for i = 0 < FILES
+    fdir FOLDER i FILE
+    savepos TMP
+    goto OFFSET
+    # Escribir archivo (comprime si es lzs)
+    set EXT extension FILE
+    if EXT == "lzs"
+        comtype nislzs
+        # opcional: aplicar compresión lzs
+    endif
+    log FILE OFFSET SIZE
+    filesize FILE SIZE
+    math OFFSET = OFFSET + SIZE
+    goto TMP
+next i
+
+# Ajustar offsets en tabla de archivos
+# Este paso es complejo: hay que volver al inicio y escribir OFFSET correctos
+# QuickBMS puede usar filepatch o similar

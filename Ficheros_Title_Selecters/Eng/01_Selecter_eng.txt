@@ -1,0 +1,12 @@
+ID 01: For Character Unlock?
+ID 02: Prologue
+ID 03: Student Council and Club Activities
+ID 04: Sports Festival
+ID 05: Apollon Route
+ID 06: Hades Route
+ID 07: Loki Route
+ID 08: Balder Route
+ID 09: Takeru Route
+ID 10: Tsukito Route
+ID 11: Anubis Route
+ID 12: Thoth Route

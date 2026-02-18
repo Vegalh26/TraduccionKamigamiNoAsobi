@@ -1,0 +1,12 @@
+ID 01: Para desbloquear personajes?
+ID 02: Pro'logo
+ID 03: El consejo estudiantil y los clubes
+ID 04: Festival deportivo
+ID 05: Ruta de Apolo
+ID 06: Ruta de Hades
+ID 07: Ruta de Loki
+ID 08: Ruta de Balder
+ID 09: Ruta de Takeru
+ID 10: Ruta de Tsukito
+ID 11: Ruta de Anubis
+ID 12: Ruta de Thoth
