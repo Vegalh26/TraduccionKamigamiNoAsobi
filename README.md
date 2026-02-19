@@ -1,5 +1,5 @@
 # 🎮 Kamigami no Asobi PSP – Traducción al Español 🇪🇸
-![GIF](https://entresabanasyalmohadas.com/wp-content/uploads/2014/06/aso.gif)
+<img src="https://entresabanasyalmohadas.com/wp-content/uploads/2014/06/aso.gif" width="100%"/>
 
 ![Estado](https://img.shields.io/badge/Estado-Traducción%20En%20progreso-yellow)
 ![Idioma](https://img.shields.io/badge/Idioma-Japonés%20→%20Español-red)
@@ -59,4 +59,4 @@ Originalmente lanzado únicamente en japonés, este proyecto permite disfrutar l
 
 ---
 
-![GIF](https://entresabanasyalmohadas.com/wp-content/uploads/2014/06/asobi.gif)
+<img src="https://entresabanasyalmohadas.com/wp-content/uploads/2014/06/asobi.gif" width="100%"/>
