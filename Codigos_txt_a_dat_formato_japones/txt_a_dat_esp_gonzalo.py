@@ -32,9 +32,9 @@ def to_full_width(text):
 
 
 def insert_story_spanish():
-    dat_path = "Ficheros_DATA01_Story/01_Story.dat"
-    txt_path = "Ficheros_DATA01_Story/01_Story_esp.txt"
-    output_path = "Ficheros_DATA01_Story/01_Story_new.dat"
+    dat_path = "Codigos_txt_a_dat_formato_japones/01_Story.dat"
+    txt_path = "Codigos_txt_a_dat_formato_japones/01_Story_esp.txt"
+    output_path = "Codigos_txt_a_dat_formato_japones/01_Story_new.dat"
 
     if not os.path.exists(dat_path):
         print("Error: Original .dat not found!")

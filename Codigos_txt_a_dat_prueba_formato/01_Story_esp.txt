@@ -1,4 +1,4 @@
-Offset 0x304: 12345678
+Offset 0x304: aaaabbbb
 Offset 0x33c: 部屋のカーテンの隙間から桜の花が見えた。
 Offset 0x370: まだ咲き切っていない未熟な花。
 Offset 0x3c0: それでも淡い紅色は美しく、

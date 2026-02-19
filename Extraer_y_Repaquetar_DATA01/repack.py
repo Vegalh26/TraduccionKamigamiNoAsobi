@@ -4,9 +4,9 @@ import zlib
 
 # Archivos que irán dentro del DATA01.dat
 files = [
-    "01_Keyword.dat",
-    "01_Story.dat",
-    "01_Story.did"
+    "Extraer_y_Repaquetar_DATA01/Archivos_originales_DAT01/01_Keyword.dat",
+    "Extraer_y_Repaquetar_DATA01/Archivos_originales_DAT01/01_Story.dat",
+    "Extraer_y_Repaquetar_DATA01/Archivos_originales_DAT01/01_Story.did"
 ]
 
 output_name = "DATA01.dat"
