@@ -6,7 +6,7 @@ import zlib
 dat_file = "Start/Original/START.DAT"
 
 # Carpeta donde se guardarán los archivos extraídos
-output_dir = "Start/extracted"
+output_dir = "Start/Start_extraido_original"
 os.makedirs(output_dir, exist_ok=True)
 
 with open(dat_file, "rb") as f:
