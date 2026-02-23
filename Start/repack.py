@@ -2,25 +2,26 @@ import struct
 import os
 import zlib
 
-# Carpeta con los archivos a meter en START.DAT
-folder = r"Start\Archivo_extraido_sart.dat"
-
-# Obtenemos todos los archivos dentro de la carpeta (sin subcarpetas)
-files = [os.path.join(folder, f) for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f))]
+folder = r"Start\Archivos_repaquetar_start"
+files = sorted([os.path.join(folder, f)
+                for f in os.listdir(folder)
+                if os.path.isfile(os.path.join(folder, f))])
 
 output_name = "START.DAT"
 
+def align(value, alignment=0x800):
+    return (value + alignment - 1) & ~(alignment - 1)
+
 with open(output_name, "wb") as out:
 
-    # Header
-    out.write(b"NISPACK\x00")            # 8 bytes
-    out.write(struct.pack("<I", 0))      # dummy
-    out.write(struct.pack("<I", len(files)))  # número de archivos
+    out.write(b"NISPACK\x00")
+    out.write(struct.pack("<I", 0))
+    out.write(struct.pack("<I", len(files)))
 
-    # Calculamos dónde empieza la data
     header_size = 8 + 4 + 4
     table_size = len(files) * (32 + 4 + 4 + 4)
-    current_offset = header_size + table_size
+
+    current_offset = align(header_size + table_size, 0x800)
 
     entries = []
 
@@ -28,24 +29,34 @@ with open(output_name, "wb") as out:
     for filename in files:
         size = os.path.getsize(filename)
         crc = zlib.crc32(open(filename, "rb").read()) & 0xffffffff
+
         entries.append((filename, current_offset, size, crc))
-        current_offset += size
+
+        current_offset = align(current_offset + size, 0x800)
 
     # Escribir tabla
     for filename, offset, size, crc in entries:
-        # Solo el nombre del archivo, sin ruta
         name_only = os.path.basename(filename)
-        name_bytes = name_only.encode("shift-jis")   # importante en juegos japoneses
-        name_bytes = name_bytes.ljust(32, b"\x00")   # rellenar hasta 32 bytes
+        name_bytes = name_only.encode("shift-jis")
+        name_bytes = name_bytes.ljust(32, b"\x00")
 
         out.write(name_bytes)
         out.write(struct.pack("<I", offset))
         out.write(struct.pack("<I", size))
         out.write(struct.pack("<I", crc))
 
-    # Escribir datos reales
-    for filename, _, _, _ in entries:
+    # Rellenar hasta primer offset alineado
+    current_pos = out.tell()
+    padding = align(current_pos, 0x800) - current_pos
+    out.write(b"\x00" * padding)
+
+    # Escribir archivos con padding
+    for filename, offset, size, crc in entries:
         with open(filename, "rb") as f:
             out.write(f.read())
+
+        current_pos = out.tell()
+        padding = align(current_pos, 0x800) - current_pos
+        out.write(b"\x00" * padding)
 
 print("Repack terminado ✔")
