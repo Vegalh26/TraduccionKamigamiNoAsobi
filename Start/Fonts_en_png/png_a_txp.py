@@ -92,8 +92,18 @@ def repack_png_to_txp(original_txp, edited_png):
     # Reemplazar datos en TXP
     txp_data[pixel_offset:pixel_offset+len(swizzled)] = swizzled
 
-    # Guardar nuevo TXP
-    out_path = original_txp.replace(".txp", "_mod.txp")
+    # Carpeta fija donde se guardarán los TXP modificados
+    output_dir = "Start/Fonts_en_png/Pruebas/Editados"
+    os.makedirs(output_dir, exist_ok=True)  # crea la carpeta si no existe
+
+    # Crear el nombre del archivo modificado conservando el original
+    filename = os.path.basename(original_txp)          # por ejemplo: FontA000.txp
+    filename_mod = filename.replace(".txp", "_mod.txp")  # FontA000_mod.txp
+
+    # Ruta completa donde se guardará
+    out_path = os.path.join(output_dir, filename_mod)
+
+    # Guardar
     with open(out_path, "wb") as f:
         f.write(txp_data)
 
@@ -107,6 +117,6 @@ def repack_png_to_txp(original_txp, edited_png):
 if __name__ == "__main__":
 
     repack_png_to_txp(
-        "Start/Archivos_repaquetar_start/FontA000.txp",
-        "Start/Archivos_repaquetar_start/FontA000.png"
+        "Start/Fonts_en_png/Pruebas/Originales/FontA001.txp",
+        "Start/Fonts_en_png/Pruebas/Editados/FontA001.png"
     )
