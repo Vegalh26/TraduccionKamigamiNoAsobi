@@ -1,23 +1,33 @@
-# 💬 Carpeta Dialogos – Estructura y Función 📂
+# 💬 Carpeta Dialogos – Sistema de extracción y conversión 📂
 <img src="https://media.tenor.com/7m9K0FQ0QwEAAAAC/anime-writing.gif" width="100%"/>
 
 ![Sección](https://img.shields.io/badge/Sección-Diálogos-purple)
 ![Formato](https://img.shields.io/badge/Formato-DAT%20%7C%20DID-orange)
+![Encoding](https://img.shields.io/badge/Encoding-Shift--JIS-red)
 ![Scripts](https://img.shields.io/badge/Scripts-Python-darkblue)
 ![Proyecto](https://img.shields.io/badge/Kamigami%20no%20Asobi-PSP-blue)
 
 ---
 
-## 🌸 ¿Qué contiene esta carpeta?
+## 🌸 ¿Qué es esta carpeta?
 
-La carpeta **Dialogos** reúne todos los scripts, pruebas y archivos relacionados con:
+La carpeta **Dialogos** contiene:
 
-- 📖 Extracción de diálogos del juego  
-- 🔄 Conversión `.dat ↔ .txt`  
-- 🧪 Pruebas de formato japonés y español  
-- 📦 Reempaquetado de `DATA01.dat`  
+- 📦 Sistema de extracción y repack de `DATA01.dat`
+- 🏷️ Sistema de trabajo para `TITLE01.dat`
+- 🔄 Conversión `.dat ↔ .txt`
+- 🧪 Pruebas de formato japonés (Shift-JIS)
+- 🇪🇸 Adaptaciones al español
 
-Es el núcleo del sistema de traducción.
+Los archivos originales del juego se encuentran en:
+`KamigamiNoAsobi\PSP_GAME\USRDIR`
+
+Dentro de esa ruta están:
+
+- `DATA01.dat` hasta `DATA12.dat`
+- `TITLE01.dat` hasta `TITLE11.dat`
+
+Esta carpeta trabaja principalmente con **DATA01.dat** y **TITLE01.dat**.
 
 ---
 
@@ -25,162 +35,203 @@ Es el núcleo del sistema de traducción.
 
 ---
 
-## 📜 `exporter_gonzalo_separado.py`
+# 🗂️ Codigos_txt_a_dat_formato_japones
 
-Script experimental para exportar textos desde los archivos originales separando correctamente bloques de diálogo.
+Carpeta estable que respeta el formato japonés original (Shift-JIS).
 
-Sirve como base para:
-- Analizar estructura interna
-- Detectar offsets
-- Entender formato de control
+### Contiene:
 
----
+- `01_Story.dat`  
+  → Archivo DAT original.
 
-## 🗂️ `Codigos_txt_a_dat_formato_japones`
+- `01_Story_esp.txt`  
+  → TXT convertido desde el DAT y editado con contenido en español.
 
-🔹 Versión estable que respeta el formato japonés original.
+- `dat_a_txt_con_formato.py`  
+  → Convierte el DAT a TXT verificando que el formato interno se mantenga correcto.
 
-Contiene:
+- `txt_a_dat_esp_formato.py`  
+  → Convierte el TXT a DAT transformando caracteres ASCII a JIS para que el juego los acepte.
 
-- `01_Story.dat` → Archivo original de prueba  
-- `01_Story_esp.txt` → Texto traducido al español  
-- `dat_a_txt_con_formato.py` → Convierte DAT a TXT manteniendo estructura  
-- `txt_a_dat_esp_gonzalo.py` → Reconstruye DAT respetando formato japonés  
-
-👉 Esta carpeta es importante porque mantiene la compatibilidad estructural con el juego.
+📌 Esta es la versión más segura cuando queremos mantener compatibilidad con el motor del juego.
 
 ---
 
-## 🧪 `Codigos_txt_a_dat_prueba_formato`
+# 🧪 Codigos_txt_a_dat_prueba_formato
 
-🔹 Carpeta de experimentación.
+Carpeta de pruebas y experimentación.
 
-Incluye diferentes versiones de scripts para probar:
+### Contiene:
 
-- Conversión con formato
-- Conversión sin formato
-- Reconstrucción alternativa
-- Pruebas fallidas o temporales (`xd (1).py`)
+- `01_Story.dat` → DAT original  
+- `01_Story_esp.txt` → TXT editado en español  
 
-Se usa para:
-- Testear cambios
-- Probar hipótesis
-- Ver cómo reacciona el juego ante modificaciones
+### Scripts:
 
----
+- `dat_a_txt_con_formato.py`  
+  → Convierte a TXT comprobando formato JIS.
 
-## 📦 `Extraer_y_Repaquetar_DATA01`
+- `dat_a_txt_sin_formato.py`  
+  → Convierte a TXT sin comprobar que se respete el formato JIS.
 
-🔹 Sistema completo para extraer y reconstruir `DATA01.dat`.
+- `txt_a_dat_esp.py`  
+  → Convierte TXT a DAT conservando el formato de caracteres en español.
 
-Contiene:
-
-### 📜 Scripts principales
-- `nispack.bms` → Script QuickBMS original  
-- `nispack.py` → Versión Python adaptada  
-- `repack.py` → Script para reconstruir el DAT  
-
-### 📂 `Archivos_originales_DAT01`
-Archivos originales sin modificar:
-- `01_Keyword.dat`
-- `01_Story.did`
-
-Sirven como referencia base limpia.
-
-### 📂 `Extraido`
-Archivos ya extraídos:
-- `01_Keyword.dat`
-- `01_Story.did`
-- `dat_a_txt.py`
-- `txt_a_dat.py`
-
-Aquí se trabaja directamente con los diálogos una vez descomprimidos.
+📌 Aquí se prueban comportamientos distintos del encoding y validación.
 
 ---
 
-## 📖 `Ficheros_DATA01_Story`
+# 📦 Extraer_y_Repaquetar_DATA01
 
-Trabajo específico sobre `01_Story`.
+Sistema completo para extraer y reconstruir `DATA01.dat`.
 
-Contiene:
+---
 
-- `dat_a_txt.py`
-- `txt_a_dat.py`
+## 📜 Scripts principales
+
+- `nispack.bms`  
+  → Script para QuickBMS que extrae archivos del DAT.
+
+- `nispack.py`  
+  → Versión en Python para no depender de QuickBMS.
+
+- `repack.py`  
+  → Script para reconstruir `DATA01.dat` y volver a insertarlo en el juego.
+
+---
+
+## 📂 Archivos_originales_DAT01
+
+`DATA01.dat` contiene 3 archivos principales:
+
 - `01_Story.dat`
-- `01_Story_esp.txt`
+- `01_Keyword.dat`
+- `01_Story.did`
 
-### 📂 Subcarpetas
-
-🔹 `Original`
-- Archivo original en DAT
-- Versión TXT sin traducir
-
-🔹 `Esp`
-- Archivo traducido
-- Versiones reconstruidas en español
-
-Es la carpeta más estable para pruebas funcionales.
+Aquí están los originales sin modificar para referencia segura.
 
 ---
 
-## 🏷️ `Ficheros_Title_Selecters`
+## 📂 Pruebas
 
-Trabajo sobre selectores de menú / títulos.
+Carpeta de trabajo.
 
-Incluye:
+Aquí:
 
+- Se copian los archivos originales.
+- Se reemplaza el `01_Story.dat` editado.
+- Se usa `repack.py` para generar un nuevo `DATA01.dat`.
+- Ese archivo se prueba dentro del juego.
+
+⚠️ Nunca se modifican los originales directamente.
+
+---
+
+# 📖 Ficheros_DATA01_Story
+
+Zona aislada para trabajar únicamente con `01_Story`.
+
+Se duplicaron los archivos aquí para no tocar los de otras carpetas.
+
+### Contiene:
+
+- `01_Story.dat` → Copia del original  
+- `01_Story_esp.txt` → Copia del archivo traducido  
+- `dat_a_txt.py` → Script usado en pruebas  
+- `txt_a_dat.py` → Conversión rápida sin modificar formato  
+
+---
+
+## 📂 Subcarpetas
+
+### 🔹 Original
+
+- `01_Story.dat` → Archivo original
+- `01_Story.txt` → Archivo original convertido a TXT
+
+---
+
+### 🔹 Esp
+
+- `01_Story_esp.txt`  
+  → Archivo que estaba siendo traducido al español.
+
+---
+
+# 🏷️ Ficheros_Title_Selecters
+
+Trabajo específico sobre los archivos de selección de título (`TITLE01.dat`).
+
+---
+
+## Contiene:
+
+- `01_Selecter_prueba.txt`
 - `dat_a_txt.py`
 - `txt_a_dat.py`
-- `01_Selecter_prueba.txt`
-- `01_Selecter_esp.dat`
 
-### 📂 Subcarpetas
-
-🔹 `Original` → Archivos base  
-🔹 `Eng` → Versión en inglés (referencia)  
-🔹 `Esp` → Versión en español  
-
-Sirve para:
-- Probar textos cortos
-- Ver cómo reacciona el juego ante caracteres modificados
-- Testear compatibilidad de encoding
+Scripts usados para pruebas rápidas sin alterar formato complejo.
 
 ---
 
-# ⚙️ Flujo de trabajo recomendado
+## 📂 Subcarpetas
+
+### 🔹 Original
+
+- `01_Selecter.dat`
+- `01_Selecter.txt`
+
+---
+
+### 🔹 Eng
+
+- `01_Selecter_eng.txt`  
+  → Archivo traducido al inglés para pruebas.
+
+---
+
+### 🔹 Esp
+
+- `01_Selecter_esp.txt`  
+  → Archivo traducido al español.
+
+---
+
+# ⚙️ Flujo de trabajo general
 
 1️⃣ Extraer `DATA01.dat`  
-2️⃣ Convertir `.dat → .txt`  
-3️⃣ Traducir el `.txt`  
-4️⃣ Reconstruir `.txt → .dat`  
-5️⃣ Reempaquetar  
-6️⃣ Probar en emulador / PSP  
+2️⃣ Convertir `01_Story.dat → TXT`  
+3️⃣ Traducir TXT  
+4️⃣ Convertir `TXT → DAT`  
+5️⃣ Reemplazar en carpeta `Pruebas`  
+6️⃣ Repackear  
+7️⃣ Probar en PSP / emulador  
 
 ---
 
-# ⚠️ Consideraciones importantes
+# ⚠️ Consideraciones técnicas importantes
 
-- El juego trabaja en **Shift-JIS**
-- No soporta directamente caracteres españoles
-- Es fundamental respetar:
+- El juego usa **Shift-JIS**
+- No soporta caracteres españoles nativos
+- Es obligatorio respetar:
   - Longitud de bloques
   - Offsets
   - Bytes de control
+  - Estructura interna
 
-Modificar mal un bloque puede romper el archivo completo.
+Un error de bytes puede romper completamente el archivo.
 
 ---
 
 # 💖 Nota para colaboradores
 
-Si vas a tocar algo:
+- No modificar archivos originales
+- Trabajar siempre sobre copias
+- Documentar cambios en scripts
+- Indicar qué versión de conversión se está usando
+- No borrar scripts de prueba sin revisar
 
-- Trabaja siempre sobre copia  
-- Documenta cambios  
-- No borres scripts de prueba sin revisar  
-- Indica qué versión del script estás usando  
-
-Esta carpeta es experimental y evoluciona constantemente.
+Esta carpeta mezcla versión estable + experimentación.
 
 ---
 
