@@ -146,7 +146,7 @@ Los `.txp` de fuentes se convierten a `.png` para poder editarlos visualmente.
   - `txp_a_png.py`
   - `png_a_txp.py`
 
-⚠️ Estos scripts funcionan correctamente solo con fuentes.
+>⚠️ Estos scripts funcionan correctamente solo con fuentes.
 
 ---
 
@@ -194,7 +194,6 @@ Contiene todos los archivos internos originales antes de cualquier modificación
 # 🗂 Archivos internos de START.DAT
 
 A continuación se detallan los archivos que contiene `START.DAT`, su posible función y estado de análisis. 
-[🔗 Ver archivos internos de START.DAT](#🗂-archivos-internos-de-startdat) 
 
 Se agrupan y enumeran según tipo y prioridad de estudio.
 
