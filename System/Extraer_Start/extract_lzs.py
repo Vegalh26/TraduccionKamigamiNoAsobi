@@ -1,7 +1,7 @@
 import os
 
-input_file = "Ajustes/extracted/start.lzs"
-output_dir = "Ajustes/extracted/start_extracted"
+input_file = "System\Extraer_Start\start.lzs"
+output_dir = "System\Extraer_Start\Extraido_Start"
 os.makedirs(output_dir, exist_ok=True)
 
 keywords = [b".dat", b".txp", b".fnt"]

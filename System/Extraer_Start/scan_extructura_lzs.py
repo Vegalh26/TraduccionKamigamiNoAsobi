@@ -1,4 +1,4 @@
-input_file = "Ajustes/extracted/start.lzs"
+input_file = "System\Extraer_Start\start.lzs"
 
 with open(input_file, "rb") as f:
     data = f.read()

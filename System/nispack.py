@@ -3,10 +3,10 @@ import os
 import zlib
 
 # Nombre del DAT que quieres extraer
-dat_file = "Ajustes\SYSTEM.DAT"
+dat_file = "System\Original_System\SYSTEM.DAT"
 
 # Carpeta donde se guardarán los archivos extraídos
-output_dir = "extracted"
+output_dir = "System\Original_System\Extraido_System"
 os.makedirs(output_dir, exist_ok=True)
 
 with open(dat_file, "rb") as f:
