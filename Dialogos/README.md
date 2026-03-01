@@ -1,5 +1,5 @@
 # 💬 Carpeta Dialogos – Sistema de extracción y conversión 📂
-<img src="https://media.tenor.com/7m9K0FQ0QwEAAAAC/anime-writing.gif" width="100%"/>
+<img src="https://c.tenor.com/AqbFEjoxOPYAAAAd/tenor.gif" width="100%"/>
 
 ![Sección](https://img.shields.io/badge/Sección-Diálogos-purple)
 ![Formato](https://img.shields.io/badge/Formato-DAT%20%7C%20DID-orange)
@@ -235,4 +235,4 @@ Scripts usados para pruebas rápidas sin alterar formato complejo.
 
 ---
 
-<img src="https://media.tenor.com/7m9K0FQ0QEAAAAC/anime-notebook.gif" width="100%"/>
+<img src="https://i.pinimg.com/originals/73/43/1a/73431a4309666bb54bb834846b3340ed.gif" width="100%"/>
