@@ -77,7 +77,7 @@ Carpeta de pruebas y experimentación.
 - `txt_a_dat_esp.py`  
   → Convierte TXT a DAT conservando el formato de caracteres en español.
 
-📌 Aquí se prueban comportamientos distintos del encoding y validación.
+>📌 Aquí se prueban comportamientos distintos del encoding y validación.
 
 ---
 
