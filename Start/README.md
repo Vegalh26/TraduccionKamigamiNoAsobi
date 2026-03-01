@@ -1,5 +1,5 @@
 # 🚀 Carpeta Start – Sistema START.DAT 📦
-<img src="https://media.tenor.com/7m9K0FQ0QwEAAAAC/anime-writing.gif" width="100%"/>
+<img src="https://media1.tenor.com/m/BJ-9w-MUVCMAAAAC/tis100-sad.gif" width="100%"/>
 
 ![Sección](https://img.shields.io/badge/Sección-START.DAT-blue)
 ![Formato](https://img.shields.io/badge/Formato-DAT%20%7C%20TXP-orange)
@@ -289,4 +289,4 @@ Esta carpeta controla el arranque visual del juego.
 
 ---
 
-<img src="https://media.tenor.com/7m9K0FQ0QEAAAAC/anime-notebook.gif" width="100%"/>
+<img src="https://c.tenor.com/KHhdyO2B0r0AAAAC/tenor.gif" width="100%"/>
