@@ -198,7 +198,7 @@ A continuación se detallan los archivos que contiene `START.DAT`, su posible fu
 
 Se agrupan y enumeran según tipo y prioridad de estudio.
 
-| #:--: | Estado | Archivo | Descripción | Prioridad |
+| # | Estado | Archivo | Descripción | Prioridad |
 |:----:|:----:|:---------|:----------------|:---------:|
 | 1 | ✅ | 00_Selecter.dat | Opciones en el juego (visible) | 🟢 |
 | 2 | ⛔ | anm9000.dat |  | ⚪ |
