@@ -53,7 +53,7 @@ Carpeta estable que respeta el formato japonés original (Shift-JIS).
 - `txt_a_dat_esp_formato.py`  
   → Convierte el TXT a DAT transformando caracteres ASCII a JIS para que el juego los acepte.
 
-📌 Esta es la versión más segura cuando queremos mantener compatibilidad con el motor del juego.
+>📌 Esta es la versión más segura cuando queremos mantener compatibilidad con el motor del juego.
 
 ---
 
@@ -123,7 +123,7 @@ Aquí:
 - Se usa `repack.py` para generar un nuevo `DATA01.dat`.
 - Ese archivo se prueba dentro del juego.
 
-⚠️ Nunca se modifican los originales directamente.
+>⚠️ Nunca se modifican los originales directamente.
 
 ---
 
@@ -219,7 +219,7 @@ Scripts usados para pruebas rápidas sin alterar formato complejo.
   - Bytes de control
   - Estructura interna
 
-Un error de bytes puede romper completamente el archivo.
+>Un error de bytes puede romper completamente el archivo.
 
 ---
 
@@ -231,7 +231,7 @@ Un error de bytes puede romper completamente el archivo.
 - Indicar qué versión de conversión se está usando
 - No borrar scripts de prueba sin revisar
 
-Esta carpeta mezcla versión estable + experimentación.
+>Esta carpeta mezcla versión estable + experimentación.
 
 ---
 
