@@ -198,62 +198,49 @@ A continuación se detallan los archivos que contiene `START.DAT`, su posible fu
 
 Se agrupan y enumeran según tipo y prioridad de estudio.
 
-<h2>🗂 Archivos internos de START.DAT</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Estado</th>
-      <th>Archivo</th>
-      <th>Descripción</th>
-      <th>Prioridad</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><center>1</center></td><td><center>✅</center></td><td>00_Selecter.dat</td><td>Opciones en el juego (visible)</td><td><center>🟢</center></td></tr>
-    <tr><td><center>2</center></td><td><center>⛔</center></td><td>anm9000.dat</td><td></td><td><center>⚪</center></td></tr>
-    <tr><td><center>3</center></td><td><center>⛔</center></td><td>BackLog_Window.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>4</center></td><td><center>⛔</center></td><td>ci0090.txp</td><td></td><td><center>⚪</center></td></tr>
-    <tr><td><center>5</center></td><td><center>⛔</center></td><td>ci0095.txp</td><td></td><td><center>⚪</center></td></tr>
-    <tr><td><center>6</center></td><td><center>⛔</center></td><td>common.dat</td><td></td><td><center>⚪</center></td></tr>
-    <tr><td><center>7</center></td><td><center>⛔</center></td><td>fontA.fnt</td><td>Posible definición de fuente</td><td><center>🔴</center></td></tr>
-    <tr><td><center>8</center></td><td><center>⛔</center></td><td>fontA.ftd</td><td>Posible datos complementarios de fuente</td><td><center>🔴</center></td></tr>
-    <tr><td><center>9</center></td><td><center>✅</center></td><td>FontA000–001.txp</td><td>Fuente convertible a PNG. Caracteres latinos</td><td><center>🔴</center></td></tr>
-    <tr><td><center>10</center></td><td><center>✅</center></td><td>FontA002.txp</td><td>Fuente convertible a PNG. Solo caracteres japoneses</td><td><center>🔴</center></td></tr>
-    <tr><td><center>11</center></td><td><center>✅</center></td><td>FontA100–111.txp</td><td>Fuente convertible a PNG. Solo caracteres japoneses</td><td><center>🔴</center></td></tr>
-    <tr><td><center>12</center></td><td><center>✅</center></td><td>FontA200–202.txp</td><td>Fuente convertible a PNG. Solo caracteres japoneses</td><td><center>🔴</center></td></tr>
-    <tr><td><center>13</center></td><td><center>❓</center></td><td>ICON0_NEW.png</td><td>Icono de casilla de guardado vacío</td><td><center>🟡</center></td></tr>
-    <tr><td><center>14</center></td><td><center>✅</center></td><td>ICON0_PLAY00–08.png</td><td>Iconos de casilla de guardado con personajes (Yui, Apollo, Hades, Tsukito, Takeru, Balder, Loki, Anubis, Thoth)</td><td><center>🟢</center></td></tr>
-    <tr><td><center>15</center></td><td><center>✅</center></td><td>ICON0_SYSTEM.png</td><td>Icono de casilla de guardado sin personaje</td><td><center>🟢</center></td></tr>
-    <tr><td><center>16</center></td><td><center>❓</center></td><td>jis2ucs.bin</td><td>Sospecha: Shift JIS → UCS. Posible uso en menús / textos en inglés</td><td><center>🔴</center></td></tr>
-    <tr><td><center>17</center></td><td><center>❓</center></td><td>loading00–08.txp</td><td>Posibles iconos de carga convertibles a PNG</td><td><center>🟡</center></td></tr>
-    <tr><td><center>18</center></td><td><center>⛔</center></td><td>music_icon.txp</td><td></td><td><center>⚪</center></td></tr>
-    <tr><td><center>19</center></td><td><center>⛔</center></td><td>music_parts.txp</td><td></td><td><center>⚪</center></td></tr>
-    <tr><td><center>20</center></td><td><center>⛔</center></td><td>music_select_01.txp</td><td></td><td><center>⚪</center></td></tr>
-    <tr><td><center>21</center></td><td><center>⛔</center></td><td>nowLoading.txp</td><td>Posible gráfico de pantalla de carga</td><td><center>🟡</center></td></tr>
-    <tr><td><center>22</center></td><td><center>⛔</center></td><td>quiz_text.txp</td><td></td><td><center>⚪</center></td></tr>
-    <tr><td><center>23</center></td><td><center>⛔</center></td><td>SE00.pbd</td><td>Posible banco de efectos de sonido</td><td><center>⚪</center></td></tr>
-    <tr><td><center>24</center></td><td><center>⛔</center></td><td>SE00.phd</td><td>Posible índice de efectos de sonido</td><td><center>⚪</center></td></tr>
-    <tr><td><center>25</center></td><td><center>⛔</center></td><td>selectChoice.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>26</center></td><td><center>⛔</center></td><td>setable.dat</td><td></td><td><center>🔴</center></td></tr>
-    <tr><td><center>27</center></td><td><center>⛔</center></td><td>shortCutDecision.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>28</center></td><td><center>⛔</center></td><td>start_cancel.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>29</center></td><td><center>⛔</center></td><td>subMenuWindow.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>30</center></td><td><center>⛔</center></td><td>sys1.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>31</center></td><td><center>⛔</center></td><td>systemMenu_BG.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>32</center></td><td><center>⛔</center></td><td>systemMenu_ChapterIcons.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>33</center></td><td><center>⛔</center></td><td>systemMenu_Parts.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>34</center></td><td><center>⛔</center></td><td>sys_name.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>35</center></td><td><center>⛔</center></td><td>textParts.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>36</center></td><td><center>⛔</center></td><td>textWindow.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>37</center></td><td><center>⛔</center></td><td>ThreadOfFatePARTS.txp</td><td></td><td><center>🟡</center></td></tr>
-    <tr><td><center>38</center></td><td><center>❓</center></td><td>ucs2jis.bin</td><td>Sospecha: UCS → Shift JIS. Posible uso al escribir nombre del jugador</td><td><center>🔴</center></td></tr>
-    <tr><td><center>39</center></td><td><center>🟡</center></td><td>Wbg0–2.txp</td><td>Posibles fondos de ventana (Window Background)</td><td><center>🟡</center></td></tr>
-    <tr><td><center>40</center></td><td><center>🟡</center></td><td>Wfm0–2.txp</td><td>Posibles marcos de ventana (Window Frame)</td><td><center>🟡</center></td></tr>
-    <tr><td><center>41</center></td><td><center>⛔</center></td><td>window_sys3.txp</td><td></td><td><center>🟡</center></td></tr>
-  </tbody>
-</table>
+| #:--: | Estado | Archivo | Descripción | Prioridad |
+|:----:|:----:|:---------|:----------------|:---------:|
+| 1 | ✅ | 00_Selecter.dat | Opciones en el juego (visible) | 🟢 |
+| 2 | ⛔ | anm9000.dat |  | ⚪ |
+| 3 | ⛔ | BackLog_Window.txp |  | 🟡 |
+| 4 | ⛔ | ci0090.txp |  | ⚪ |
+| 5 | ⛔ | ci0095.txp |  | ⚪ |
+| 6 | ⛔ | common.dat |  | ⚪ |
+| 7 | ⛔ | fontA.fnt | Posible definición de fuente | 🔴 |
+| 8 | ⛔ | fontA.ftd | Posible datos complementarios de fuente | 🔴 |
+| 9 | ✅ | FontA000–001.txp | Fuente convertible a PNG. Caracteres latinos | 🔴 |
+| 10 | ✅ | FontA002.txp | Fuente convertible a PNG. Solo caracteres japoneses | 🔴 |
+| 11 | ✅ | FontA100–111.txp | Fuente convertible a PNG. Solo caracteres japoneses | 🔴 |
+| 12 | ✅ | FontA200–202.txp | Fuente convertible a PNG. Solo caracteres japoneses | 🔴 |
+| 13 | ❓ | ICON0_NEW.png | Icono de casilla de guardado vacío | 🟡 |
+| 14 | ✅ | ICON0_PLAY00–08.png | Iconos de casilla de guardado con personajes (Yui, Apollo, Hades, Tsukito, Takeru, Balder, Loki, Anubis, Thoth) | 🟢 |
+| 15 | ✅ | ICON0_SYSTEM.png | Icono de casilla de guardado sin personaje | 🟢 |
+| 16 | ❓ | jis2ucs.bin | Sospecha: Shift JIS → UCS. Posible uso en menús / textos en inglés | 🔴 |
+| 17 | ❓ | loading00–08.txp | Posibles iconos de carga convertibles a PNG | 🟡 |
+| 18 | ⛔ | music_icon.txp |  | ⚪ |
+| 19 | ⛔ | music_parts.txp |  | ⚪ |
+| 20 | ⛔ | music_select_01.txp |  | ⚪ |
+| 21 | ⛔ | nowLoading.txp | Posible gráfico de pantalla de carga | 🟡 |
+| 22 | ⛔ | quiz_text.txp |  | ⚪ |
+| 23 | ⛔ | SE00.pbd | Posible banco de efectos de sonido | ⚪ |
+| 24 | ⛔ | SE00.phd | Posible índice de efectos de sonido | ⚪ |
+| 25 | ⛔ | selectChoice.txp |  | 🟡 |
+| 26 | ⛔ | setable.dat |  | 🔴 |
+| 27 | ⛔ | shortCutDecision.txp |  | 🟡 |
+| 28 | ⛔ | start_cancel.txp |  | 🟡 |
+| 29 | ⛔ | subMenuWindow.txp |  | 🟡 |
+| 30 | ⛔ | sys1.txp |  | 🟡 |
+| 31 | ⛔ | systemMenu_BG.txp |  | 🟡 |
+| 32 | ⛔ | systemMenu_ChapterIcons.txp |  | 🟡 |
+| 33 | ⛔ | systemMenu_Parts.txp |  | 🟡 |
+| 34 | ⛔ | sys_name.txp |  | 🟡 |
+| 35 | ⛔ | textParts.txp |  | 🟡 |
+| 36 | ⛔ | textWindow.txp |  | 🟡 |
+| 37 | ⛔ | ThreadOfFatePARTS.txp |  | 🟡 |
+| 38 | ❓ | ucs2jis.bin | Sospecha: UCS → Shift JIS. Posible uso al escribir nombre del jugador | 🔴 |
+| 39 | 🟡 | Wbg0–2.txp | Posibles fondos de ventana (Window Background) | 🟡 |
+| 40 | 🟡 | Wfm0–2.txp | Posibles marcos de ventana (Window Frame) | 🟡 |
+| 41 | ⛔ | window_sys3.txp |  | 🟡 |
 
 > 🔹 **Leyenda de prioridad:**  
 > 🟢 Alta → Confirmado o crítico para visualización / juego  
