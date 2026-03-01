@@ -206,8 +206,8 @@ Se agrupan y enumeran según tipo y prioridad de estudio.
 | 4 | ⛔ | ci0090.txp |  | ⚪ |
 | 5 | ⛔ | ci0095.txp |  | ⚪ |
 | 6 | ⛔ | common.dat |  | ⚪ |
-| 7 | ⛔ | fontA.fnt | Posible definición de fuente | 🔴 |
-| 8 | ⛔ | fontA.ftd | Posible datos complementarios de fuente | 🔴 |
+| 7 | ❓ | fontA.fnt | Posible definición de fuente | 🔴 |
+| 8 | ❓ | fontA.ftd | Posible datos complementarios de fuente | 🔴 |
 | 9 | ✅ | FontA000–001.txp | Fuente convertible a PNG. Caracteres latinos | 🔴 |
 | 10 | ✅ | FontA002.txp | Fuente convertible a PNG. Solo caracteres japoneses | 🔴 |
 | 11 | ✅ | FontA100–111.txp | Fuente convertible a PNG. Solo caracteres japoneses | 🔴 |
@@ -238,8 +238,8 @@ Se agrupan y enumeran según tipo y prioridad de estudio.
 | 36 | ⛔ | textWindow.txp |  | 🟡 |
 | 37 | ⛔ | ThreadOfFatePARTS.txp |  | 🟡 |
 | 38 | ❓ | ucs2jis.bin | Sospecha: UCS → Shift JIS. Posible uso al escribir nombre del jugador | 🔴 |
-| 39 | 🟡 | Wbg0–2.txp | Posibles fondos de ventana (Window Background) | 🟡 |
-| 40 | 🟡 | Wfm0–2.txp | Posibles marcos de ventana (Window Frame) | 🟡 |
+| 39 | ❓ | Wbg0–2.txp | Posibles fondos de ventana (Window Background) | 🟡 |
+| 40 | ❓ | Wfm0–2.txp | Posibles marcos de ventana (Window Frame) | 🟡 |
 | 41 | ⛔ | window_sys3.txp |  | 🟡 |
 
 > 🔹 **Leyenda de prioridad:**  
