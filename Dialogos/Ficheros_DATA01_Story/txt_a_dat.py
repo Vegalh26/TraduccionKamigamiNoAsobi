@@ -2,9 +2,9 @@ import re
 
 def insert_story():
 
-    dat_path = "Ficheros_DATA01_Story/01_Story.dat"
-    txt_path = "Ficheros_DATA01_Story/01_Story_esp.txt"
-    output_path = "Ficheros_DATA01_Story/01_Story_new.dat"
+    dat_path = "Dialogos/Ficheros_DATA01_Story/01_Story.dat"
+    txt_path = "Dialogos/Ficheros_DATA01_Story/01_Story_prueba.txt"
+    output_path = "Dialogos/Ficheros_DATA01_Story/01_Story_new.dat"
 
     with open(dat_path, "rb") as f:
         data = bytearray(f.read())

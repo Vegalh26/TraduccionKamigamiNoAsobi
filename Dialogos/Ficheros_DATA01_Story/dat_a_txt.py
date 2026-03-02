@@ -1,7 +1,7 @@
 import re
 import os
 
-def forensic_nis_extract(filename, output_file="Ficheros_DATA01_Story/01_Story_prueba.txt"):
+def forensic_nis_extract(filename, output_file="Dialogos/Ficheros_DATA01_Story/01_Story_prueba.txt"):
     if not os.path.exists(filename):
         print(f"Mal path: {filename}")
         return
@@ -32,4 +32,4 @@ def forensic_nis_extract(filename, output_file="Ficheros_DATA01_Story/01_Story_p
 
 
 # Usa la ruta correcta de tu .dat
-forensic_nis_extract("Ficheros_DATA01_Story/01_Story_new.dat")
+forensic_nis_extract("Dialogos/Ficheros_DATA01_Story/01_Story.dat")

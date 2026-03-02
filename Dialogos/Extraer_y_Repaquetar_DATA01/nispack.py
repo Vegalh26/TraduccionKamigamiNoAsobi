@@ -3,10 +3,10 @@ import os
 import zlib
 
 # Nombre del DAT que quieres extraer
-dat_file = "DATA01.dat"
+dat_file = "Dialogos\Extraer_y_Repaquetar_DATA01\Archivos_originales_DAT01\DATA01.DAT"
 
 # Carpeta donde se guardarán los archivos extraídos
-output_dir = "extracted"
+output_dir = "Dialogos\Extraer_y_Repaquetar_DATA01\Archivos_originales_DAT01"
 os.makedirs(output_dir, exist_ok=True)
 
 with open(dat_file, "rb") as f:
