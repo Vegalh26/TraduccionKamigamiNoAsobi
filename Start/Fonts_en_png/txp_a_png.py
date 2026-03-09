@@ -81,18 +81,7 @@ def extract_txp(file_path):
 if __name__ == "__main__":
 
     files = [
-        "Start/Archivos_repaquetar_start/FontA103.txp",
-        "Start/Archivos_repaquetar_start/FontA104.txp",
-        "Start/Archivos_repaquetar_start/FontA105.txp",
-        "Start/Archivos_repaquetar_start/FontA106.txp",
-        "Start/Archivos_repaquetar_start/FontA107.txp",
-        "Start/Archivos_repaquetar_start/FontA108.txp",
-        "Start/Archivos_repaquetar_start/FontA109.txp",
-        "Start/Archivos_repaquetar_start/FontA110.txp",
-        "Start/Archivos_repaquetar_start/FontA111.txp",
-        "Start/Archivos_repaquetar_start/FontA200.txp",
-        "Start/Archivos_repaquetar_start/FontA201.txp",
-        "Start/Archivos_repaquetar_start/FontA202.txp",
+        "Start\Fonts_en_png\Pruebas\Editados\FontA000_mod.txp",
     ]
 
     for file in files:

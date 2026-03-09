@@ -2,7 +2,7 @@ import struct
 import os
 import zlib
 
-folder = r"Start\Archivos_repaquetar_start"
+folder = r"Start\Start_extraido_original"
 files = sorted([os.path.join(folder, f)
                 for f in os.listdir(folder)
                 if os.path.isfile(os.path.join(folder, f))])
