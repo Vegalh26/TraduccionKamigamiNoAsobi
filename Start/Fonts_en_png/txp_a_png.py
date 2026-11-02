@@ -81,7 +81,7 @@ def extract_txp(file_path):
 if __name__ == "__main__":
 
     files = [
-        "Start\Fonts_en_png\Pruebas\Editados\FontA000_mod.txp",
+        "Start\Fonts_en_png\FontA_patched_variants\FontA001_adv12.txp",
     ]
 
     for file in files:
